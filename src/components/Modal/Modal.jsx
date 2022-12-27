@@ -13,7 +13,7 @@ const Modal = ({ largeImageURL, onClose }) => {
     return () => {
       window.removeEventListener('keydown', handleKeydown);
     };
-  }, []);
+  }, [onClose]);
 
   const handleOvarlayClick = e => {
     if (e.currentTarget === e.target) {

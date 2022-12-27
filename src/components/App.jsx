@@ -17,7 +17,6 @@ export const App = () => {
   const [total, setTotal] = useState(0);
   const [modalImage, setModalImage] = useState('');
   const [page, setPage] = useState(1);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -30,8 +29,8 @@ export const App = () => {
       return;
     }
     fetchImages()
-      .catch(error => {
-        setError(error);
+      .catch(err => {
+        console.log(err);
       })
       .finally(() => {
         setLoading(false);
