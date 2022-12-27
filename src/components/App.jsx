@@ -30,7 +30,7 @@ export const App = () => {
       return;
     }
     fetchImages()
-      .catch(() => {
+      .catch(error => {
         setError(error);
       })
       .finally(() => {
