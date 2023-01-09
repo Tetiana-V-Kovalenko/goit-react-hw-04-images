@@ -6,6 +6,7 @@ const ImageGalleryItem = ({ webformatURL, tags, onImageClick, id }) => {
     </li>
   );
 };
+
 ImageGalleryItem.propTypes = {
   webformatURL: PropTypes.string,
   tags: PropTypes.string,
